@@ -4,6 +4,7 @@ import { Sparkles, Images } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ConfettiAnimation from '@/components/confetti-animation';
 import PhotoGallery from '@/components/photo-gallery';
+import FeedbackForm from '@/components/feedback-form';
 
 
 export default function BirthdayPage() {
@@ -148,6 +149,10 @@ export default function BirthdayPage() {
       </section>
       {/* Photo Gallery */}
       <PhotoGallery />
+
+      {/* Feedback Form */}
+      <FeedbackForm />
+
       {/* Closing Section */}
       <section className="py-16 bg-white text-center">
         <div className="max-w-3xl mx-auto px-4">
