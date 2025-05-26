@@ -115,12 +115,12 @@ export default function PhotoGallery() {
             <img
               src={featuredPhoto.src}
               alt={featuredPhoto.alt}
-              className="w-full h-96 md:h-[500px] object-cover"
+              className="w-full h-96 md:h-[500px] object-contain bg-gradient-to-br from-pink-50 to-purple-50"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
-              <h3 className="font-playfair text-2xl font-semibold mb-2">Making Memories</h3>
-              <p className="font-montserrat text-sm opacity-90">The best moments are meant to be celebrated</p>
+              <h3 className="font-playfair text-2xl font-semibold mb-2">Beautiful Memories</h3>
+              <p className="font-montserrat text-sm opacity-90">Exploring heritage and culture - such a peaceful moment</p>
             </div>
             <div className="absolute top-6 right-6 text-white opacity-0 group-hover:opacity-100 transition-opacity">
               <Expand className="h-6 w-6" />
@@ -145,7 +145,7 @@ export default function PhotoGallery() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-contain bg-gradient-to-br from-pink-50 to-purple-50"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <Expand className="h-6 w-6 text-white" />
