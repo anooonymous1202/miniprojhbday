@@ -39,10 +39,10 @@ export default function BirthdayPage() {
         <motion.div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.1, scale: 1 }}
+          animate={{ opacity: 0.3, scale: 1 }}
           transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
         >
-          <span className="font-playfair text-[30rem] md:text-[40rem] font-bold text-pink-300 select-none">
+          <span className="font-playfair text-[30rem] md:text-[40rem] font-bold gradient-text select-none">
             18
           </span>
         </motion.div>
