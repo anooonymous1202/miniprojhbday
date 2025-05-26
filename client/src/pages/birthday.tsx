@@ -114,7 +114,7 @@ export default function BirthdayPage() {
           </motion.div>
           
           <motion.div
-            className="glass-effect rounded-2xl p-8 mb-8 transform hover:scale-105 transition-all duration-300"
+            className="glass-effect rounded-2xl p-8 mb-8 transform hover:scale-105 transition-all duration-300 relative z-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
