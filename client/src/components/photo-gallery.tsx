@@ -115,8 +115,7 @@ export default function PhotoGallery() {
             <img
               src={featuredPhoto.src}
               alt={featuredPhoto.alt}
-              className="w-full h-64 md:h-96 object-cover"
-              style={{ aspectRatio: '3/2' }}
+              className="w-full h-96 md:h-[500px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
@@ -146,8 +145,7 @@ export default function PhotoGallery() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-32 object-cover"
-                  style={{ aspectRatio: '3/2' }}
+                  className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <Expand className="h-6 w-6 text-white" />
