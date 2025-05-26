@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import ConfettiAnimation from '@/components/confetti-animation';
 import PhotoGallery from '@/components/photo-gallery';
 import FeedbackForm from '@/components/feedback-form';
+import BackgroundMusic from '@/components/background-music';
 
 
 export default function BirthdayPage() {
@@ -32,6 +33,7 @@ export default function BirthdayPage() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <BackgroundMusic />
       <ConfettiAnimation isActive={showConfetti} />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 overflow-hidden">
