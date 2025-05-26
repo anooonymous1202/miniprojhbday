@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 import { Expand, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PhotoModal from './photo-modal';
+import photo1 from "@assets/1.jpg";
+import photo2 from "@assets/2.jpg";
+import photo3 from "@assets/3.jpg";
+import photo4 from "@assets/4.jpg";
+import photo5 from "@assets/5.jpg";
+import photo6 from "@assets/imagy-image copy.jpg";
+import photo7 from "@assets/imagy-image.jpg";
 
 interface Photo {
   src: string;
@@ -12,44 +19,39 @@ interface Photo {
 
 const photos: Photo[] = [
   {
-    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600',
-    alt: 'Birthday celebration with friends gathered around a colorful cake',
-    caption: 'Making Memories - The best moments are meant to be celebrated'
+    src: photo1,
+    alt: 'Beautiful moment at a historic temple with intricate carvings',
+    caption: 'Exploring heritage and culture - such a peaceful moment'
   },
   {
-    src: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Elegant gift box with golden ribbon and bow',
-    caption: 'Elegant Gift Box with Golden Ribbon'
+    src: photo2,
+    alt: 'Bright smile surrounded by lush greenery and palm trees',
+    caption: 'Natural beauty in a tropical paradise'
   },
   {
-    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Colorful birthday party decorations with balloons and streamers',
-    caption: 'Colorful Party Decorations with Balloons'
+    src: photo3,
+    alt: 'Joyful pose in a beautiful floral dress in the park',
+    caption: 'Dancing through life with style and grace'
   },
   {
-    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Birthday celebration with group of friends laughing and having fun',
-    caption: 'Friends Celebrating Birthday Together'
+    src: photo4,
+    alt: 'Happy celebration with friends and warm smiles',
+    caption: 'Cherished moments with the people who matter most'
   },
   {
-    src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Beautiful wrapped presents with colorful ribbons and bows',
-    caption: 'Colorful Wrapped Presents with Ribbons'
+    src: photo5,
+    alt: 'Elegant evening look with stunning traditional jewelry',
+    caption: 'Radiating elegance and timeless beauty'
   },
   {
-    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Festive confetti and party streamers in bright colors',
-    caption: 'Colorful Confetti and Party Streamers'
+    src: photo6,
+    alt: 'Graceful in traditional attire with beautiful floral patterns',
+    caption: 'Embracing tradition with modern charm'
   },
   {
-    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Special birthday moment with candles being blown out',
-    caption: 'Birthday Candles Being Blown Out'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-    alt: 'Birthday party table setup with decorations and treats',
-    caption: 'Birthday Party Table with Decorations'
+    src: photo7,
+    alt: 'Sweet moment with a furry friend in festive red',
+    caption: 'Love and joy shared with a beloved companion'
   }
 ];
 
