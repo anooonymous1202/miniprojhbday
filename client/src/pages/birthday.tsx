@@ -32,7 +32,6 @@ export default function BirthdayPage() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <ConfettiAnimation isActive={showConfetti} />
-      
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 overflow-hidden">
         {/* Large 18 that pops in front then fades to background */}
@@ -128,9 +127,7 @@ export default function BirthdayPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2.9 }}
           >
-            <p className="font-playfair text-2xl md:text-3xl text-gray-700 leading-relaxed mb-4">
-              "Another year of wonderful memories, laughter, and joy! May this special day bring you happiness beyond measure and may the year ahead be filled with blessings, adventures, and dreams come true."
-            </p>
+            <p className="font-playfair md:text-3xl text-gray-700 mb-4 text-[18px]">Wow, another year older and still managing to look fabulous—how do you do it? 😜 Hope your day is packed with cake, chaos, and all the things that make you smile. Wishing you a year full of wild adventures, unexpected blessings, and maybe even a few dreams coming true (or at least not turning into complete disasters)!</p>
             <p className="font-montserrat text-lg text-purple-600 font-medium">
               From someone who cares about you ✨
             </p>
@@ -151,13 +148,10 @@ export default function BirthdayPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Photo Gallery */}
       <PhotoGallery />
-
       {/* Birthday Wishes */}
       <BirthdayWishes />
-
       {/* Closing Section */}
       <section className="py-16 bg-white text-center">
         <div className="max-w-3xl mx-auto px-4">
