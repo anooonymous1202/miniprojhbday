@@ -12,43 +12,43 @@ interface Photo {
 
 const photos: Photo[] = [
   {
-    src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800',
-    alt: 'Portrait style birthday celebration photo',
+    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600',
+    alt: 'Birthday celebration with friends gathered around a colorful cake',
     caption: 'Making Memories - The best moments are meant to be celebrated'
   },
   {
-    src: 'https://images.unsplash.com/photo-1607344645866-009c7d0435c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style birthday gift photo',
+    src: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Elegant gift box with golden ribbon and bow',
     caption: 'Elegant Gift Box with Golden Ribbon'
   },
   {
-    src: 'https://images.unsplash.com/photo-1555412654-72a95ab4549b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style birthday decorations',
+    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Colorful birthday party decorations with balloons and streamers',
     caption: 'Colorful Party Decorations with Balloons'
   },
   {
-    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style celebration photo',
+    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Birthday celebration with group of friends laughing and having fun',
     caption: 'Friends Celebrating Birthday Together'
   },
   {
-    src: 'https://images.unsplash.com/photo-1607344645866-009c7d0435c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style wrapped presents',
+    src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Beautiful wrapped presents with colorful ribbons and bows',
     caption: 'Colorful Wrapped Presents with Ribbons'
   },
   {
-    src: 'https://images.unsplash.com/photo-1555412654-72a95ab4549b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style confetti photo',
+    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Festive confetti and party streamers in bright colors',
     caption: 'Colorful Confetti and Party Streamers'
   },
   {
-    src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style birthday candles',
+    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Special birthday moment with candles being blown out',
     caption: 'Birthday Candles Being Blown Out'
   },
   {
-    src: 'https://images.unsplash.com/photo-1607344645866-009c7d0435c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    alt: 'Portrait style party table setup',
+    src: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    alt: 'Birthday party table setup with decorations and treats',
     caption: 'Birthday Party Table with Decorations'
   }
 ];
