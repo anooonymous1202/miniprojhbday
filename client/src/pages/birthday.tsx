@@ -35,6 +35,18 @@ export default function BirthdayPage() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 overflow-hidden">
+        {/* Large 18 in background */}
+        <motion.div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 0.1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+        >
+          <span className="font-playfair text-[30rem] md:text-[40rem] font-bold text-pink-300 select-none">
+            18
+          </span>
+        </motion.div>
+
         {/* Floating decoration elements */}
         {floatingEmojis.map((emoji, index) => {
           const positions = [
@@ -47,7 +59,7 @@ export default function BirthdayPage() {
           return (
             <motion.div
               key={index}
-              className="absolute text-4xl md:text-6xl"
+              className="absolute text-4xl md:text-6xl z-10"
               style={positions[index]}
               animate={{ y: [-10, 10, -10] }}
               transition={{
@@ -81,7 +93,7 @@ export default function BirthdayPage() {
                 ease: "easeInOut"
               }}
             >
-              Happy Birthday!
+              Happy 18th Birthday!
             </motion.h1>
             <div className="flex justify-center items-center gap-4 text-4xl md:text-6xl mb-6">
               {['🎂', '🎈', '🎉', '🎁'].map((emoji, index) => (
