@@ -12,42 +12,42 @@ interface Photo {
 
 const photos: Photo[] = [
   {
-    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600',
+    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1200',
     alt: 'Birthday celebration with friends gathered around a colorful cake',
     caption: 'Making Memories - The best moments are meant to be celebrated'
   },
   {
-    src: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Elegant gift box with golden ribbon and bow',
     caption: 'Elegant Gift Box with Golden Ribbon'
   },
   {
-    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Colorful birthday party decorations with balloons and streamers',
     caption: 'Colorful Party Decorations with Balloons'
   },
   {
-    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Birthday celebration with group of friends laughing and having fun',
     caption: 'Friends Celebrating Birthday Together'
   },
   {
-    src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Beautiful wrapped presents with colorful ribbons and bows',
     caption: 'Colorful Wrapped Presents with Ribbons'
   },
   {
-    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Festive confetti and party streamers in bright colors',
     caption: 'Colorful Confetti and Party Streamers'
   },
   {
-    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Special birthday moment with candles being blown out',
     caption: 'Birthday Candles Being Blown Out'
   },
   {
-    src: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    src: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     alt: 'Birthday party table setup with decorations and treats',
     caption: 'Birthday Party Table with Decorations'
   }
