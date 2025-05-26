@@ -35,12 +35,21 @@ export default function BirthdayPage() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 overflow-hidden">
-        {/* Large 18 in background */}
+        {/* Large 18 that pops in front then fades to background */}
         <motion.div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.3, scale: 1 }}
-          transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.5, zIndex: 50 }}
+          animate={{ 
+            opacity: [0, 1, 1, 0.2], 
+            scale: [0.5, 1.2, 1, 1],
+            zIndex: [50, 50, 50, 5]
+          }}
+          transition={{ 
+            duration: 4,
+            delay: 1,
+            times: [0, 0.3, 0.7, 1],
+            ease: "easeOut"
+          }}
         >
           <span className="font-playfair text-[30rem] md:text-[40rem] font-bold gradient-text select-none">
             18
