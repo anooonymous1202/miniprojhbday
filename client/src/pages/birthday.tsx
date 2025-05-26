@@ -202,17 +202,7 @@ export default function BirthdayPage() {
             </Button>
           </motion.div>
 
-          <motion.div
-            className="mt-12 p-6 bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <p className="font-playfair text-2xl text-gray-700 font-semibold">
-              "Count your life by smiles, not tears. Count your age by friends, not years."
-            </p>
-          </motion.div>
+
         </div>
       </section>
     </div>
