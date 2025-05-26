@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import ConfettiAnimation from '@/components/confetti-animation';
 import PhotoGallery from '@/components/photo-gallery';
 import FeedbackForm from '@/components/feedback-form';
+import MusicPlayer from '@/components/music-player';
 
 
 export default function BirthdayPage() {
@@ -210,6 +211,9 @@ export default function BirthdayPage() {
 
         </div>
       </section>
+
+      {/* Music Player */}
+      <MusicPlayer />
     </div>
   );
 }
