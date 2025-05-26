@@ -95,9 +95,7 @@ export default function PhotoGallery() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-          >
-            A collection of beautiful moments that capture your amazing journey
-          </motion.p>
+          >Beautiful you! </motion.p>
         </div>
 
         {/* Featured photo */}
@@ -179,7 +177,6 @@ export default function PhotoGallery() {
           </Button>
         </motion.div>
       </div>
-
       <PhotoModal
         photos={photos}
         currentIndex={currentImageIndex}

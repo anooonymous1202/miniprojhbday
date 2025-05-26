@@ -4,7 +4,7 @@ import { Sparkles, Images } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ConfettiAnimation from '@/components/confetti-animation';
 import PhotoGallery from '@/components/photo-gallery';
-import BirthdayWishes from '@/components/birthday-wishes';
+
 
 export default function BirthdayPage() {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -91,7 +91,7 @@ export default function BirthdayPage() {
             transition={{ duration: 0.8, delay: 2.5, ease: "easeOut" }}
           >
             <motion.h1
-              className="font-playfair text-6xl md:text-8xl font-bold gradient-text mb-4"
+              className="font-playfair md:text-8xl font-bold gradient-text mb-4 text-[54px]"
               animate={{ 
                 scale: [1, 1.05, 1],
               }}
@@ -100,9 +100,7 @@ export default function BirthdayPage() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-            >
-              Happy 18th Birthday!
-            </motion.h1>
+            >Happy 18th Birthday Haas!</motion.h1>
             <div className="flex justify-center items-center gap-4 text-4xl md:text-6xl mb-6">
               {['🎂', '🎈', '🎉', '🎁'].map((emoji, index) => (
                 <motion.span
@@ -150,8 +148,6 @@ export default function BirthdayPage() {
       </section>
       {/* Photo Gallery */}
       <PhotoGallery />
-      {/* Birthday Wishes */}
-      <BirthdayWishes />
       {/* Closing Section */}
       <section className="py-16 bg-white text-center">
         <div className="max-w-3xl mx-auto px-4">
