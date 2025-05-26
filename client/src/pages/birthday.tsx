@@ -89,7 +89,7 @@ export default function BirthdayPage() {
             className="mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 2.5, ease: "easeOut" }}
           >
             <motion.h1
               className="font-playfair text-6xl md:text-8xl font-bold gradient-text mb-4"
@@ -126,7 +126,7 @@ export default function BirthdayPage() {
             className="glass-effect rounded-2xl p-8 mb-8 transform hover:scale-105 transition-all duration-300 relative z-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 2.9 }}
           >
             <p className="font-playfair text-2xl md:text-3xl text-gray-700 leading-relaxed mb-4">
               "Another year of wonderful memories, laughter, and joy! May this special day bring you happiness beyond measure and may the year ahead be filled with blessings, adventures, and dreams come true."
@@ -139,7 +139,7 @@ export default function BirthdayPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 3.3 }}
           >
             <Button
               onClick={scrollToGallery}
