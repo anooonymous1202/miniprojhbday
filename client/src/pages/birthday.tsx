@@ -158,12 +158,8 @@ export default function BirthdayPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
-              Make This Day Unforgettable
-            </h2>
-            <p className="font-montserrat text-xl text-gray-600 leading-relaxed mb-8">
-              Birthdays are nature's way of telling us to eat more cake, make more wishes, and celebrate the incredible person you are!
-            </p>
+            <h2 className="font-playfair md:text-5xl font-bold gradient-text mb-6 text-[31px]">Cheers to surviving 18 years of chaos Haasika,here’s to more! 🎉</h2>
+
           </motion.div>
 
           <motion.div
