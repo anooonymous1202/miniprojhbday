@@ -165,8 +165,9 @@ export default function BirthdayPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-playfair md:text-5xl font-bold gradient-text mb-6 text-[31px]">Cheers to surviving 18 years of chaos Haasika,here’s to more! 🎉</h2>
-
+            <h2 className="font-playfair md:text-5xl font-bold gradient-text mb-6 text-[31px]">Cheers to surviving 18 years of chaos Haasika,here's to more! 🎉</h2>
+            <p className="font-montserrat text-sm text-gray-500 italic mb-2">Hint: The sender isn't the guy with the black Honda — but someone else who notices more.</p>
+            <p className="font-montserrat text-sm text-gray-500 italic mb-8">No need to worry! You're not being tracked — just getting celebrated 🎈</p>
           </motion.div>
 
           <motion.div

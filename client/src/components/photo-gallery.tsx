@@ -97,7 +97,7 @@ export default function PhotoGallery() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-          >Beautiful you! </motion.p>
+          >The way you dance shows how happy your heart is. Never stop shining</motion.p>
         </div>
 
         {/* Featured photo */}
