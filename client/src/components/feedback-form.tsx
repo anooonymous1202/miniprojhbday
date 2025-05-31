@@ -37,7 +37,7 @@ export default function FeedbackForm() {
       });
       queryClient.invalidateQueries({ queryKey: ['/api/feedback'] });
     },
-    onError: (error) => {
+    onError: (error: any) => {
       toast({
         title: "Oops!",
         description: "Something went wrong. Please try again.",
@@ -133,10 +133,10 @@ export default function FeedbackForm() {
             >
               <Button
                 type="submit"
-                disabled={!message.trim() || isSubmitting}
+                disabled={!message.trim() || feedbackMutation.isPending}
                 className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-12 py-4 rounded-full font-montserrat font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 disabled:opacity-50"
               >
-                {isSubmitting ? (
+                {feedbackMutation.isPending ? (
                   <>
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
                     Sending...
