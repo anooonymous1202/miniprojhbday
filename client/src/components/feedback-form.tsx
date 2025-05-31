@@ -4,6 +4,8 @@ import { Heart, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useMutation } from '@tanstack/react-query';
+import { queryClient } from '@/lib/queryClient';
 
 export default function FeedbackForm() {
   const [message, setMessage] = useState('');
@@ -11,21 +13,45 @@ export default function FeedbackForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!message.trim()) return;
-
-    setIsSubmitting(true);
-    
-    // Simulate submission delay
-    setTimeout(() => {
-      setIsSubmitting(false);
+  const feedbackMutation = useMutation({
+    mutationFn: async (data: { message: string }) => {
+      const response = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit feedback');
+      }
+      
+      return response.json();
+    },
+    onSuccess: () => {
       setIsSubmitted(true);
       toast({
         title: "Thank you! 💕",
         description: "Your message has been received with love!",
       });
-    }, 1000);
+      queryClient.invalidateQueries({ queryKey: ['/api/feedback'] });
+    },
+    onError: (error) => {
+      toast({
+        title: "Oops!",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+      console.error('Error submitting feedback:', error);
+    },
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!message.trim()) return;
+
+    feedbackMutation.mutate({ message: message.trim() });
   };
 
   if (isSubmitted) {
